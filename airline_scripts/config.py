@@ -6,6 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 REPORTS_DIR = os.path.join(BASE_DIR, "reports")
 LOGS_DIR = os.path.join(BASE_DIR, "logs")
+IMAGES_DIR = os.path.join(BASE_DIR, "images")
 NOTEBOOKS_DIR = os.path.join(BASE_DIR, "notebooks")
 STEP_OUTPUT_DIR = os.path.join(BASE_DIR, "output_steps")
 
@@ -26,6 +27,8 @@ DQ_LOG_FILE_PATH = os.path.join(LOGS_DIR, "dq_metrics.csv")
 REJECTED_FLIGHTS_FILE = os.path.join(LOGS_DIR, "rejected_flights_data.csv")
 REJECTED_TICKETS_FILE = os.path.join(LOGS_DIR, "rejected_tickets_data.csv")
 REJECTED_AIRPORTS_FILE = os.path.join(LOGS_DIR, "rejected_airports_data.csv")
+
+TABLEAU_SSHOT_TOP10_BUSY = os.path.join(IMAGES_DIR, "top_10_busiest_routes.png")
 
 # --- Column Names (Constants for used columns) ---
 # Airport Codes Columns

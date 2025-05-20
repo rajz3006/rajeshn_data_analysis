@@ -12,30 +12,34 @@ The project is organized as follows:
 
 
 airline_data_challenge_submission/
-|
-|-- data/                             # Contains the raw data CSVs (Flights.csv, Tickets.csv, Airport_Codes.csv) - Not for submission as per instructions, used locally.
-|
-|-- notebooks/
-|   |-- Airline_Route_Analysis.ipynb  # Main Jupyter Notebook detailing the entire analysis workflow, from data loading to final recommendations.
-|
-|-- airline_scripts/                  # Reusable Python modules to keep the notebook clean and logic organized.
-|   |-- init.py                       # Makes 'airline_scripts' a Python package.
-|   |-- config.py                     # Centralized configuration: file paths, column names, business constants.
-|   |-- load_utils.py                 # Functions for data loading.
-|   |-- dq_utils.py                   # Functions for data quality metric logging.
-|   |-- clean_utils.py                # Functions for data cleaning and validation.
-|   |-- feature_engineering_utils.py  # Functions for creating new features, calculating costs/revenues, etc.
-|   |-- analysis_utils.py             # Functions for core analytical tasks (profitability, busiest routes, breakeven).
-|
-|-- reports/                          # Stores generated reports, like data profiling HTML files from ydata-profiling.
-|
-|-- output_steps/                     # Stores generated temporary data frames as CSV files for tableau visualisation and manual analysis.
-|
-|-- logs/                             # Contains the data quality metrics log (dq_metrics.csv).
-|
-|-- README.md                         # This file: project overview, setup, and execution instructions.
-|-- requirements.txt                  # Python package dependencies for reproducibility.
-|-- Airline_Challenge_Submission.twbx # Packaged Tableau workbook with dashboards.
+│
+├── data/                          # Contains the raw data CSVs (Flights.csv, Tickets.csv, Airport_Codes.csv)
+│                                  # Not for submission as per instructions, used locally.
+│
+├── notebooks/
+│   └── Airline_Route_Analysis.ipynb  # Main Jupyter Notebook detailing the entire analysis workflow,
+│                                     # from data loading to final recommendations.
+│
+├── airline_scripts/               # Reusable Python modules to keep the notebook clean and logic organized.
+│   ├── init.py                # Makes 'airline_scripts' a Python package.
+│   ├── config.py                  # Centralized configuration: file paths, column names, business constants.
+│   ├── load_utils.py              # Functions for data loading.
+│   ├── dq_utils.py                # Functions for data quality metric logging.
+│   ├── clean_utils.py             # Functions for data cleaning and validation.
+│   ├── feature_engineering_utils.py  # Functions for creating new features, calculating costs/revenues, etc.
+│   └── analysis_utils.py          # Functions for core analytical tasks (profitability, busiest routes, breakeven).
+│
+├── reports/                       # Stores generated reports, like data profiling HTML files from ydata-profiling.
+│
+├── output_steps/                  # Stores generated temporary data frames as CSV files for tableau visualisation and manual analysis.
+│
+├── logs/                          # Contains the data quality metrics log (dq_metrics.csv).
+│
+├── README.md                      # This file: project overview, setup, and execution instructions.
+│
+├── requirements.txt               # Python package dependencies for reproducibility.
+│
+└── Airline_Challenge_Submission.twbx  # Packaged Tableau workbook with dashboards.
 
 
 ## Setup Instructions

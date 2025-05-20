@@ -1,4 +1,4 @@
-# Airline Data Analysis Challenge Submission
+# Airline Data Analysis Submission
 
 ## Project Overview
 
